@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaunchX - AI创新加速器</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 页面加载动画 -->
+    <div class="page-loader">
+        <span class="loader"></span>
+    </div>
+
+    <!-- 导航栏 -->
+    <header class="header glass-effect">
+        <nav class="nav-container">
+            <div class="logo">LaunchX</div>
+            <ul class="nav-menu">
+                <li><a href="about.html">关于我们</a></li>
+                <li><a href="#services">服务介绍</a></li>
+                <li><a href="#cases">服务案例</a></li>
+                <li><a href="#contact">联系我们</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <a href="developer.html" class="nav-button developer-button">
+                    <i class="fas fa-code"></i>
+                    我是开发者
+                </a>
+                <a href="investor.html" class="nav-button investor-button">
+                    <i class="fas fa-chart-line"></i>
+                    我是投资者
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 英雄区域 -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1 class="gradient-text">助力 AI 创新体打造商业闭环</h1>
+            <p class="hero-subtitle">通过资金、技术、市场和品牌资源整合，加速 AI 初创企业的商业化进程</p>
+            <div class="hero-stats">
+                <div class="stat-item" data-value="7">
+                    <div class="stat-icon">
+                        <img src="images/icons/agile-consulting.svg" alt="灵敏咨询">
+                    </div>
+                    <span class="stat-number">7</span>
+                    <span class="stat-label">灵敏咨询和评估</span>
+                </div>
+                <div class="stat-item" data-value="15">
+                    <div class="stat-icon">
+                        <img src="images/icons/mvp-revenue.svg" alt="MVP营收化">
+                    </div>
+                    <span class="stat-number">15</span>
+                    <span class="stat-label">MVP营收化</span>
+                </div>
+                <div class="stat-item" data-value="100">
+                    <div class="stat-icon">
+                        <img src="images/icons/global-partners.svg" alt="全球合作">
+                    </div>
+                    <span class="stat-number">100+</span>
+                    <span class="stat-label">全球战略合作伙伴</span>
+                </div>
+            </div>
+            <div class="hero-buttons">
+                <button class="primary-button pulse-animation">开始咨询</button>
+                <a href="#services" class="secondary-button">了解更多</a>
+            </div>
+        </div>
+        <div class="hero-background-glow"></div>
+    </section>
+
+    <!-- 服务介绍 -->
+    <section id="services" class="services-section">
+        <h2 class="section-title gradient-text">一站式服务体系</h2>
+        <div class="services-grid">
+            <div class="service-card card-3d">
+                <div class="card-3d-content">
+                    <div class="service-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>MVP 支持</h3>
+                    <p>7天完成项目评估，15天内提供关键资源支持</p>
+                    <ul class="feature-list">
+                        <li>快速评估</li>
+                        <li>资源匹配</li>
+                        <li>技术支持</li>
+                    </ul>
+                </div>
+                <div class="card-glow"></div>
+            </div>
+
+            <div class="service-card card-3d">
+                <div class="card-3d-content">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>商业化支持</h3>
+                    <p>MVP放大支持，全方位助力企业成长</p>
+                    <ul class="feature-list">
+                        <li>资金支持</li>
+                        <li>人才引进</li>
+                        <li>品牌建设</li>
+                        <li>专业咨询</li>
+                    </ul>
+                </div>
+                <div class="card-glow"></div>
+            </div>
+
+            <div class="service-card card-3d">
+                <div class="card-3d-content">
+                    <div class="service-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h3>资金支持</h3>
+                    <p>灵活的资金支持方案，助力企业快速发展</p>
+                    <ul class="feature-list">
+                        <li>股权投资</li>
+                        <li>债权融资</li>
+                        <li>销售支持</li>
+                    </ul>
+                </div>
+                <div class="card-glow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 服务案例 -->
+    <section id="cases" class="cases-section">
+        <h2 class="section-title gradient-text">成功案例</h2>
+        <div class="cases-mosaic">
+            <!-- AI助手案例 -->
+            <div class="case-item" data-category="AI助手">
+                <div class="case-preview">
+                    <img src="images/cases/ai-assistant.jpg" alt="AI智能助手">
+                    <div class="case-overlay">
+                        <h3>AI智能助手</h3>
+                        <span class="case-tag">AI助手</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI绘画案例 -->
+            <div class="case-item" data-category="AI绘画">
+                <div class="case-preview">
+                    <img src="images/cases/ai-art.jpg" alt="AI艺术创作平台">
+                    <div class="case-overlay">
+                        <h3>AI艺术创作平台</h3>
+                        <span class="case-tag">AI绘画</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 继续添加其他案例... -->
+        </div>
+    </section>
+
+    <!-- 全球战略合作伙伴部分 -->
+    <section id="partners" class="partners-section">
+        <h2 class="section-title gradient-text">全球战略合作伙伴</h2>
+        
+        <div class="partners-grid">
+            <!-- Atrium Health -->
+            <div class="partner-card">
+                <div class="card-front">
+                    <div class="partner-logo">
+                        <img src="images/partners/atrium-health.png" alt="Atrium Health">
+                    </div>
+                    <h3>Atrium Health Inc.</h3>
+                    <p class="partner-industry">老年��理和养老服务</p>
+                </div>
+                
+                <div class="card-expand">
+                    <div class="detail-section">
+                        <h4>行业地位</h4>
+                        <p>致力于在加拿大推广新的独立和辅助生活服务理念，强调温馨氛围和过渡性生活方式。</p>
+                    </div>
+                    <div class="detail-section">
+                        <h4>能力范围</h4>
+                        <p>开发多个老年社区项目，如The Trillium、Hamilton High Street和Richmond City Centre，提供不同级别的住宿和全方位的设施。</p>
+                    </div>
+                    <div class="detail-section">
+                        <h4>商业前景</h4>
+                        <p>随着人口老龄化趋势，在老年护理市场具有增长潜力，特别是在提供综合性、社区导向的养老解决方案方面。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Intelli Group -->
+            <div class="partner-card">
+                <div class="card-front">
+                    <div class="partner-logo">
+                        <img src="images/partners/intelli-group.png" alt="Intelli Group">
+                    </div>
+                    <h3>Intelli Group</h3>
+                    <p class="partner-industry">房地产开发和商业咨询</p>
+                </div>
+                
+                <div class="card-expand">
+                    <div class="detail-section">
+                        <h4>行业地位</h4>
+                        <p>成立于2002年，总部位于加拿大列治文，在房地产开发、专业咨询、业务发展、土地收购和开发方面积累了丰富经验。</p>
+                    </div>
+                    <div class="detail-section">
+                        <h4>能力范围</h4>
+                        <p>公司提供全面的房地产服务，包括定制解决方案、项目开发，以及技术创新，致力于将客户的愿景从概念转化为现实。</p>
+                    </div>
+                    <div class="detail-section">
+                        <h4>商业前景</h4>
+                        <p>凭借其在加拿大和国际市场的经验，可在不断发展的房地产市场中抓住新的发展和投资机会。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Richmond Sentinel -->
+            <div class="partner-card">
+                <div class="card-front">
+                    <div class="partner-logo">
+                        <img src="images/partners/richmond-sentinel.png" alt="Richmond Sentinel">
+                    </div>
+                    <h3>Richmond Sentinel</h3>
+                    <p class="partner-industry">媒体和新闻出版</p>
+                </div>
+                
+                <div class="card-expand">
+                    <div class="detail-section">
+                        <h4>行业地位</h4>
+                        <p>加拿大列治文的多平台社区媒体服务，专注于提供本地相关故事，连接社区成员。</p>
+                    </div>
+                    <div class="detail-section">
+                        <h4>能力范围</h4>
+                        <p>提供准确、公正和相关的新闻，涵盖社区、加拿大和国际新闻，以及视频和专题报道，致力于促进社区理解和参与。</p>
+                    </div>
+                    <div class="detail-section">
+                        <h4>商业前景</h4>
+                        <p>通过数字化转型和多平台内容分发，可扩大其受众群体，并吸引更多广告商，提升盈利能力。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- e2p -->
+            <div class="partner-card">
+                <div class="card-front">
+                    <div class="partner-logo">
+                        <img src="images/partners/e2p.png" alt="e2p">
+                    </div>
+                    <h3>e2p</h3>
+                    <p class="partner-industry">私募股权投资（食品和饮料行业）</p>
+                </div>
+                
+                <div class="card-expand">
+                    <div class="detail-section">
+                        <h4>行业地位</h4>
+                        <p>专注于食品和饮料行业的私募股权投资，拥有丰富的行业经验和专业知识。</p>
+                    </div>
+                    <div class="detail-section">
+                        <h4>能力范围</h4>
+                        <p>投资于年收入超过5000万美元的企业，重点关注自有品牌、合同制造、食品服务、食品和饮料品牌以及消费品包装领域。</p>
+                    </div>
+                    <div class="detail-section">
+                        <h4>商业前景</h4>
+                        <p>通过与食品行业企业的合作，可推动创新，提升企业价值，并在不断变化的市场中实现增长。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bonvin -->
+            <div class="partner-card">
+                <div class="card-front">
+                    <div class="partner-logo">
+                        <img src="images/partners/bonvin.png" alt="Bonvin">
+                    </div>
+                    <h3>Bonvin</h3>
+                    <p class="partner-industry">葡萄酒和烈酒贸易</p>
+                </div>
+                
+                <div class="card-expand">
+                    <div class="detail-section">
+                        <h4>行业地位</h4>
+                        <p>自2009年以来，致力于将世界最佳葡萄酒带给全球客户，以其精心挑选的产品而闻名。</p>
+                    </div>
+                    <div class="detail-section">
+                        <h4>能力范围</h4>
+                        <p>提供来自法国、意大利、西班牙等地的高品质葡萄酒，满足不同价格和品种需求，并在列治文设有办事处。</p>
+                    </div>
+                    <div class="detail-section">
+                        <h4>商业前景</h4>
+                        <p>随着全球对优质葡萄酒需求的增长，可通过扩大产品线和市场覆盖，进一步提升其市场份额。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 诺樽酒业 -->
+            <div class="partner-card">
+                <div class="card-front">
+                    <div class="partner-logo">
+                        <img src="images/partners/norden-wine.png" alt="诺樽酒业">
+                    </div>
+                    <h3>诺樽酒业</h3>
+                    <p class="partner-industry">葡萄酒贸易和教育</p>
+                </div>
+                
+                <div class="card-expand">
+                    <div class="detail-section">
+                        <h4>行业地位</h4>
+                        <p>专注于提供来自加拿大、法国、意大利和西班牙的优质葡萄酒，并提供葡萄酒教育和旅游服务。</p>
+                    </div>
+                    <div class="detail-section">
+                        <h4>能力范围</h4>
+                        <p>提供多样化的葡萄酒选择，涵盖不同国家、品种和价格，并提供葡萄酒教育课程和旅游体验，促进葡萄酒文化传播。</p>
+                    </div>
+                    <div class="detail-section">
+                        <h4>商业前景</h4>
+                        <p>通过结合产品销售、教育和旅游，可在葡萄酒爱好者中建立忠实客户群，并在新兴市场中拓展业务。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 浮动客服按钮 -->
+    <div class="float-button">
+        <button class="support-button">
+            <i class="fas fa-comments"></i>
+        </button>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 LaunchX. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

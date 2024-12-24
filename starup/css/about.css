@@ -1,0 +1,755 @@
+/* 关于我们页面特定样式 */
+.about-hero {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 2rem 4rem;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(37, 99, 235, 0.05));
+}
+
+/* 团队成员卡片 */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 1.5rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.team-card {
+    background: var(--glass-bg);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.team-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 0.75rem;
+    padding: 1px;
+    background: var(--primary-gradient);
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0.2;
+}
+
+.member-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.member-avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    border: 1px solid var(--primary-color);
+}
+
+.member-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.member-info h4 {
+    font-size: 1.125rem;
+    margin-bottom: 0.25rem;
+    color: var(--text-primary);
+}
+
+.member-title {
+    color: var(--primary-color);
+    font-size: 0.875rem;
+    display: block;
+    line-height: 1.4;
+}
+
+.member-highlights {
+    margin: 1rem 0;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.member-highlights p {
+    position: relative;
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.member-highlights p::before {
+    content: "•";
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+}
+
+.member-expertise {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.expertise-tag {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    background: rgba(37, 99, 235, 0.1);
+    color: var(--primary-color);
+}
+
+/* 响应式优化 */
+@media (max-width: 768px) {
+    .team-grid {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        padding: 1rem;
+        gap: 1rem;
+    }
+}
+
+/* 联系信息 */
+.contact-section {
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.05), rgba(37, 99, 235, 0.02));
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-card {
+    background: var(--glass-bg);
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 0.75rem;
+    transition: transform 0.3s ease;
+}
+
+.info-item:hover {
+    transform: translateY(-2px);
+}
+
+.info-item i {
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    padding-top: 0.25rem;
+}
+
+.info-content h4 {
+    font-size: 0.875rem;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.info-content p {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    line-height: 1.4;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .contact-info {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .info-item {
+        padding: 0.75rem;
+    }
+}
+
+/* 顾问卡片样式优化 */
+.advisors-section {
+    margin-top: 4rem;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 1.25rem;
+    letter-spacing: 0.5px;
+    padding-bottom: 0.75rem;
+    margin-bottom: 2rem;
+    color: var(--text-primary);
+    position: relative;
+    padding-bottom: 1rem;
+    margin-bottom: 3rem;
+}
+
+.section-subtitle::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 2px;
+    background: var(--primary-gradient);
+    border-radius: 3px;
+}
+
+.advisors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    padding: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.advisor-card {
+    background: var(--glass-bg);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    text-align: left;
+    transition: all 0.3s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.advisor-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 0.75rem;
+    padding: 1px;
+    background: var(--primary-gradient);
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0.3;
+}
+
+.advisor-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.advisor-avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    border: 1px solid var(--primary-color);
+    flex-shrink: 0;
+}
+
+.advisor-info {
+    flex: 1;
+}
+
+.advisor-info h4 {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+    color: var(--text-primary);
+}
+
+.advisor-title {
+    color: var(--primary-color);
+    font-size: 0.75rem;
+    margin: 0;
+    display: block;
+    line-height: 1.4;
+}
+
+.advisor-highlights {
+    margin: 1rem 0;
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.advisor-highlights p {
+    position: relative;
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.advisor-highlights p::before {
+    content: "•";
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+}
+
+.advisor-experience {
+    margin-top: auto;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.advisor-experience ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+}
+
+.advisor-experience li {
+    margin-bottom: 0.25rem;
+    padding-left: 1rem;
+    position: relative;
+    line-height: 1.6;
+}
+
+/* 响应式优化 */
+@media (max-width: 768px) {
+    .advisors-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        padding: 1rem;
+    }
+}
+
+/* 添加专业领域颜色变量 */
+:root {
+    --investment-color: #3b82f6;    /* 投资 - 蓝色 */
+    --strategy-color: #8b5cf6;      /* 战略 - 紫色 */
+    --tech-color: #10b981;          /* 技术 - 绿色 */
+    --global-color: #f59e0b;        /* 全球化 - 橙色 */
+    --product-color: #ec4899;       /* 产品 - 粉色 */
+    --management-color: #6366f1;    /* 管理 - 靛蓝色 */
+}
+
+/* 专业领域指示器 */
+.expertise-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 2rem auto 3rem;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    padding: 0 1rem;
+}
+
+.expertise-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1.25rem;
+    border-radius: 1.5rem;
+    background: var(--glass-bg);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-size: 0.875rem;
+}
+
+.expertise-item[data-type="investment"] {
+    border: 1px solid var(--investment-color);
+    color: var(--investment-color);
+}
+
+.expertise-item[data-type="strategy"] {
+    border: 1px solid var(--strategy-color);
+    color: var(--strategy-color);
+}
+
+.expertise-item[data-type="tech"] {
+    border: 1px solid var(--tech-color);
+    color: var(--tech-color);
+}
+
+.expertise-item[data-type="brand"] {
+    border: 1px solid var(--brand-color);
+    color: var(--brand-color);
+}
+
+.expertise-item[data-type="global"] {
+    background: rgba(245, 158, 11, 0.1);
+    color: var(--global-color);
+}
+
+.expertise-item[data-type="product"] {
+    background: rgba(236, 72, 153, 0.1);
+    color: var(--product-color);
+}
+
+.expertise-item[data-type="management"] {
+    background: rgba(99, 102, 241, 0.1);
+    color: var(--management-color);
+}
+
+.expertise-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 团队卡片增强 */
+.team-card {
+    position: relative;
+    overflow: visible;
+}
+
+.expertise-dots {
+    position: absolute;
+    top: -0.5rem;
+    right: 1rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.dot {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    background: var(--color);
+    box-shadow: 0 0 8px var(--color);
+}
+
+/* 协作指示器 */
+.collaboration-indicator {
+    position: relative;
+    margin-top: 2rem;
+    height: 200px;
+}
+
+.collaboration-lines {
+    width: 100%;
+    height: 100%;
+}
+
+/* 连接线动画 */
+.connection-line {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: drawLine 2s ease forwards;
+}
+
+@keyframes drawLine {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* 团队卡片悬停效果增强 */
+.team-card {
+    transition: all 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 
+        0 8px 24px rgba(0, 0, 0, 0.1),
+        0 0 0 1px var(--primary-color);
+}
+
+.team-card:hover .expertise-dots .dot {
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* 添加专业领域标签样式 */
+.expertise-tag {
+    position: relative;
+    z-index: 1;
+}
+
+.expertise-tag[data-type="investment"] {
+    background: rgba(59, 130, 246, 0.1);
+    color: var(--investment-color);
+}
+
+.expertise-tag[data-type="strategy"] {
+    background: rgba(139, 92, 246, 0.1);
+    color: var(--strategy-color);
+}
+
+.expertise-tag[data-type="tech"] {
+    background: rgba(16, 185, 129, 0.1);
+    color: var(--tech-color);
+}
+
+.expertise-tag[data-type="brand"] {
+    background: rgba(245, 158, 11, 0.1);
+    color: var(--brand-color);
+}
+
+.expertise-tag[data-type="global"] {
+    background: rgba(245, 158, 11, 0.1);
+    color: var(--global-color);
+}
+
+.expertise-tag[data-type="product"] {
+    background: rgba(236, 72, 153, 0.1);
+    color: var(--product-color);
+}
+
+.expertise-tag[data-type="management"] {
+    background: rgba(99, 102, 241, 0.1);
+    color: var(--management-color);
+}
+
+/* 连接线样式 */
+.connection-line {
+    fill: none;
+    stroke-width: 2;
+    stroke: rgba(99, 102, 241, 0.2);
+    transition: all 0.3s ease;
+}
+
+.connection-line.dimmed {
+    opacity: 0.1;
+}
+
+/* 专业领域连接线颜色 */
+.connection-investment { stroke: var(--investment-color); }
+.connection-strategy { stroke: var(--strategy-color); }
+.connection-tech { stroke: var(--tech-color); }
+.connection-global { stroke: var(--global-color); }
+.connection-product { stroke: var(--product-color); }
+.connection-management { stroke: var(--management-color); }
+
+/* 卡片状态样式 */
+.team-card.dimmed {
+    opacity: 0.5;
+    transform: scale(0.98);
+}
+
+.team-card.highlighted {
+    transform: translateY(-5px);
+    box-shadow: 
+        0 8px 24px rgba(0, 0, 0, 0.1),
+        0 0 0 2px var(--primary-color);
+}
+
+/* 专业领域筛选器激活状态 */
+.expertise-item.active {
+    background: var(--primary-gradient);
+    color: white;
+    border: none;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 优化连接线动画 */
+.connection-line {
+    transition: stroke-dashoffset 1s ease, opacity 0.3s ease;
+}
+
+/* 优化专业领域筛选器 */
+.expertise-indicators {
+    position: relative;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    padding: 1rem;
+    border-radius: 2rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+.expertise-item[data-type="all"] {
+    background: var(--glass-bg);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.expertise-item[data-type="all"].active {
+    background: var(--primary-gradient);
+    color: white;
+    border: none;
+}
+
+/* 优化卡片交互 */
+.team-card {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-card.dimmed {
+    opacity: 0.4;
+    transform: scale(0.95);
+    filter: grayscale(50%);
+}
+
+.team-card.highlighted {
+    transform: translateY(-8px);
+    box-shadow: 
+        0 12px 28px rgba(0, 0, 0, 0.1),
+        0 0 0 2px var(--primary-color);
+}
+
+/* 添加协作指示器响应式调整 */
+@media (max-width: 768px) {
+    .collaboration-indicator {
+        height: 150px;
+    }
+    
+    .expertise-indicators {
+        padding: 0.75rem;
+        gap: 0.75rem;
+    }
+    
+    .expertise-item {
+        padding: 0.5rem 1rem;
+        font-size: 0.75rem;
+    }
+}
+
+/* 卡片悬停展开效果 */
+.team-card {
+    height: 160px;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.team-card:hover {
+    height: 400px;
+    transform: translateY(-8px);
+}
+
+.card-front {
+    position: relative;
+    z-index: 2;
+}
+
+.card-expand {
+    position: relative;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0.1s;
+}
+
+.team-card:hover .card-expand {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.expand-content {
+    padding-top: 1rem;
+    border-top: 1px solid rgba(99, 102, 241, 0.1);
+    margin-top: 1rem;
+}
+
+/* 成就列表样式 */
+.member-achievements {
+    margin-top: 1.5rem;
+}
+
+.member-achievements h5 {
+    font-size: 0.875rem;
+    color: var(--text-primary);
+    margin-bottom: 0.75rem;
+}
+
+.member-achievements ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.member-achievements li {
+    position: relative;
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.member-achievements li::before {
+    content: "→";
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+}
+
+/* 优化卡片动画 */
+.team-card::after {
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 24px;
+    height: 24px;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>') no-repeat center;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.team-card:hover::after {
+    opacity: 0;
+    transform: translate(-50%, 10px);
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .team-card {
+        height: 140px;
+    }
+    
+    .team-card:hover {
+        height: 360px;
+    }
+}
+
+/* 添加滚动条样式 */
+.card-expand {
+    max-height: calc(100% - 160px);
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-color) transparent;
+}
+
+.card-expand::-webkit-scrollbar {
+    width: 4px;
+}
+
+.card-expand::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.card-expand::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 2px;
+} 

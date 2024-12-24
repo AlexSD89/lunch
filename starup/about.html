@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我们 - LaunchX</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="header glass-effect">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">LaunchX</a>
+            <ul class="nav-menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="#team">核心团队</a></li>
+                <li><a href="#contact">联系我们</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 团队介绍横幅 -->
+    <section class="about-hero">
+        <div class="hero-content">
+            <h1 class="gradient-text">创新团队 引领未来</h1>
+            <p class="hero-subtitle">汇聚行业精英，助力AI创新创业</p>
+        </div>
+        <div class="hero-background-glow"></div>
+    </section>
+
+    <!-- 核心团队 -->
+    <section id="team" class="team-section">
+        <h2 class="section-title gradient-text">核心团队</h2>
+        
+        <!-- 团队专业领域指示器 -->
+        <div class="expertise-indicators">
+            <div class="expertise-item" data-type="investment">
+                <i class="fas fa-chart-line"></i>
+                <span>投资顾问</span>
+            </div>
+            <div class="expertise-item" data-type="strategy">
+                <i class="fas fa-chess"></i>
+                <span>战略咨询</span>
+            </div>
+            <div class="expertise-item" data-type="tech">
+                <i class="fas fa-microchip"></i>
+                <span>技术支持</span>
+            </div>
+            <div class="expertise-item" data-type="brand">
+                <i class="fas fa-bullhorn"></i>
+                <span>品牌建设</span>
+            </div>
+        </div>
+
+        <div class="team-grid">
+            <!-- 党思远 -->
+            <div class="team-card" data-expertise="investment,strategy,management">
+                <div class="card-front">
+                    <div class="expertise-dots">
+                        <span class="dot" style="--color: var(--investment-color)"></span>
+                        <span class="dot" style="--color: var(--strategy-color)"></span>
+                        <span class="dot" style="--color: var(--management-color)"></span>
+                    </div>
+                    <div class="member-header">
+                        <div class="member-avatar">
+                            <img src="images/team/dsy.jpg" alt="党思远">
+                        </div>
+                        <div class="member-info">
+                            <h4>党思远</h4>
+                            <span class="member-title">执行总监</span>
+                        </div>
+                    </div>
+                    <div class="member-brief">
+                        <p>投资与公司管理专家</p>
+                    </div>
+                </div>
+                
+                <div class="card-expand">
+                    <div class="expand-content">
+                        <div class="member-highlights">
+                            <p>投资与公司管理（私募投资、企业孵化）</p>
+                            <p>投管退10年经验，创业2年经验，高管4年经验</p>
+                            <p>现任极链科（60亿估值）董事会秘书</p>
+                        </div>
+                        <div class="member-expertise">
+                            <span class="expertise-tag" data-type="investment">投资管理</span>
+                            <span class="expertise-tag" data-type="strategy">战略规划</span>
+                            <span class="expertise-tag" data-type="tech">AI产业</span>
+                        </div>
+                        <div class="member-achievements">
+                            <h5>主要成就</h5>
+                            <ul>
+                                <li>Pro-ipo和公司内部CVC孵化经验</li>
+                                <li>投资领域覆盖AI、互联网、消费、电子、文娱、出海等</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 林立伟 -->
+            <div class="team-card" data-expertise="investment,tech">
+                <div class="expertise-dots">
+                    <span class="dot" style="--color: var(--investment-color)"></span>
+                    <span class="dot" style="--color: var(--tech-color)"></span>
+                </div>
+                <div class="member-header">
+                    <div class="member-avatar">
+                        <img src="images/team/llw.jpg" alt="林立伟">
+                    </div>
+                    <div class="member-info">
+                        <h4>林立伟</h4>
+                        <span class="member-title">投顾会高级顾问</span>
+                    </div>
+                </div>
+                <div class="member-highlights">
+                    <p>凯风创投（K2VC）高级副总裁</p>
+                    <p>12年互联网科技及消费品行业经验</p>
+                    <p>专注AI科技、智能制造、消费品与生物技术</p>
+                </div>
+                <div class="member-expertise">
+                    <span class="expertise-tag" data-type="investment">风险投资</span>
+                    <span class="expertise-tag" data-type="tech">科技创新</span>
+                </div>
+            </div>
+
+            <!-- Tiffany Wu -->
+            <div class="team-card" data-expertise="investment,strategy">
+                <div class="expertise-dots">
+                    <span class="dot" style="--color: var(--investment-color)"></span>
+                    <span class="dot" style="--color: var(--strategy-color)"></span>
+                </div>
+                <div class="member-header">
+                    <div class="member-avatar">
+                        <img src="images/team/tw.jpg" alt="Tiffany Wu">
+                    </div>
+                    <div class="member-info">
+                        <h4>Tiffany Wu</h4>
+                        <span class="member-title">投顾会高级顾问</span>
+                    </div>
+                </div>
+                <div class="member-highlights">
+                    <p>6年前沿科技及AI领域投资经验</p>
+                    <p>前中信资本副总裁</p>
+                    <p>MONITOR战略咨询顾问</p>
+                </div>
+                <div class="member-expertise">
+                    <span class="expertise-tag" data-type="investment">AI投资</span>
+                    <span class="expertise-tag" data-type="strategy">战略咨询</span>
+                </div>
+            </div>
+
+            <!-- Xinhua Zhou -->
+            <div class="team-card" data-expertise="investment,strategy,global">
+                <div class="expertise-dots">
+                    <span class="dot" style="--color: var(--investment-color)"></span>
+                    <span class="dot" style="--color: var(--strategy-color)"></span>
+                    <span class="dot" style="--color: var(--global-color)"></span>
+                </div>
+                <div class="member-header">
+                    <div class="member-avatar">
+                        <img src="images/team/xhz.jpg" alt="Xinhua Zhou">
+                    </div>
+                    <div class="member-info">
+                        <h4>Xinhua Zhou</h4>
+                        <span class="member-title">投顾会高级顾问</span>
+                    </div>
+                </div>
+                <div class="member-highlights">
+                    <p>Morning Trail Investment合伙人</p>
+                    <p>前特斯联科技高级副总裁</p>
+                    <p>前分众传媒旗下产业基金合伙人</p>
+                </div>
+                <div class="member-expertise">
+                    <span class="expertise-tag" data-type="investment">产业投资</span>
+                    <span class="expertise-tag" data-type="global">全球化</span>
+                </div>
+            </div>
+
+            <!-- Chen Su -->
+            <div class="team-card" data-expertise="tech,strategy">
+                <div class="expertise-dots">
+                    <span class="dot" style="--color: var(--tech-color)"></span>
+                    <span class="dot" style="--color: var(--strategy-color)"></span>
+                </div>
+                <div class="member-header">
+                    <div class="member-avatar">
+                        <img src="images/team/cs.jpg" alt="Chen Su">
+                    </div>
+                    <div class="member-info">
+                        <h4>Chen Su</h4>
+                        <span class="member-title">技术咨询顾问</span>
+                    </div>
+                </div>
+                <div class="member-highlights">
+                    <p>网络云联合创始人 & CEO</p>
+                    <p>AI开源组织roiAI.org联合创始人</p>
+                    <p>前Sungivenfoods元初食品零售事业总监</p>
+                </div>
+                <div class="member-expertise">
+                    <span class="expertise-tag" data-type="tech">AI技术</span>
+                    <span class="expertise-tag" data-type="strategy">商业落地</span>
+                </div>
+            </div>
+
+            <!-- Alex Xiu -->
+            <div class="team-card" data-expertise="tech,product">
+                <div class="expertise-dots">
+                    <span class="dot" style="--color: var(--tech-color)"></span>
+                    <span class="dot" style="--color: var(--product-color)"></span>
+                </div>
+                <div class="member-header">
+                    <div class="member-avatar">
+                        <img src="images/team/ax.jpg" alt="Alex Xiu">
+                    </div>
+                    <div class="member-info">
+                        <h4>Alex Xiu</h4>
+                        <span class="member-title">技术咨询顾问</span>
+                    </div>
+                </div>
+                <div class="member-highlights">
+                    <p>网络云联合创始人 & COO</p>
+                    <p>前RingCentral亚太产品经理</p>
+                    <p>前eHealth技术负责人</p>
+                </div>
+                <div class="member-expertise">
+                    <span class="expertise-tag" data-type="tech">技术架构</span>
+                    <span class="expertise-tag" data-type="product">产品管理</span>
+                </div>
+            </div>
+
+            <!-- Ken Su -->
+            <div class="team-card" data-expertise="global,strategy">
+                <div class="expertise-dots">
+                    <span class="dot" style="--color: var(--global-color)"></span>
+                    <span class="dot" style="--color: var(--strategy-color)"></span>
+                </div>
+                <div class="member-header">
+                    <div class="member-avatar">
+                        <img src="images/team/ks.jpg" alt="Ken Su">
+                    </div>
+                    <div class="member-info">
+                        <h4>Ken Su</h4>
+                        <span class="member-title">全球化咨询高级顾问</span>
+                    </div>
+                </div>
+                <div class="member-highlights">
+                    <p>KPMG加拿大交易咨询合伙人</p>
+                    <p>25年跨境投资与交易经验</p>
+                    <p>专注跨境投资、尽职调查、财务分析</p>
+                </div>
+                <div class="member-expertise">
+                    <span class="expertise-tag" data-type="global">跨境业务</span>
+                    <span class="expertise-tag" data-type="strategy">交易咨询</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 团队协作指示器 -->
+        <div class="collaboration-indicator">
+            <svg class="collaboration-lines" viewBox="0 0 1000 200">
+                <!-- 动态生成的连接线 -->
+            </svg>
+        </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section id="contact" class="contact-section">
+        <h2 class="section-title gradient-text">联系我们</h2>
+        <div class="contact-container">
+            <div class="contact-card">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="info-content">
+                            <h4>办公地址</h4>
+                            <p>北京市朝阳区xxx大厦</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="info-content">
+                            <h4>商务合作</h4>
+                            <p>contact@launchx.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div class="info-content">
+                            <h4>咨询热线</h4>
+                            <p>400-888-8888</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 LaunchX. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/about.js"></script>
+</body>
+</html> 
